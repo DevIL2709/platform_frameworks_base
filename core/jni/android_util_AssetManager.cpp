@@ -2123,7 +2123,6 @@ static jintArray android_content_AssetManager_getStyleAttributes(JNIEnv* env, jo
 
 static void android_content_AssetManager_init(JNIEnv* env, jobject clazz, jboolean isSystem)
 {
-<<<<<<< HEAD
     if (isSystem) {
         // Load frameworks-res.apk's overlay through regionalization environment
         if (Environment::isSupported()) {
@@ -2140,8 +2139,6 @@ static void android_content_AssetManager_init(JNIEnv* env, jobject clazz, jboole
 
         verifySystemIdmaps(AssetManager::OVERLAY_DIR);
     }
-=======
->>>>>>> 19df4b3... OMS-N: integrate OverlayManagerService into framework [6/14]
     AssetManager* am = new AssetManager();
     if (am == NULL) {
         jniThrowException(env, "java/lang/OutOfMemoryError", "");
