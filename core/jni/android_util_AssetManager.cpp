@@ -129,7 +129,6 @@ jint copyValue(JNIEnv* env, jobject outValue, const ResTable* table,
     return block;
 }
 
-<<<<<<< HEAD
 // This is called by zygote (running as user root) as part of preloadResources.
 static void verifySystemIdmaps(const char* overlay_dir)
 {
@@ -209,8 +208,6 @@ static void verifySystemIdmaps(const char* overlay_dir)
     }
 }
 
-=======
->>>>>>> 19df4b3... OMS-N: integrate OverlayManagerService into framework [6/14]
 // ----------------------------------------------------------------------------
 
 // this guy is exported to other jni routines
